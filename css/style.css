@@ -1,246 +1,295 @@
 @charset "UTF-8";
-* {
-  color: rgb(245, 242, 242);
+/* Custom Section Styling */
+section {
+  padding: 119px 70px;
+  background-color: #121212; /* Ensure section matches theme */
 }
 
-header {
-  z-index: 1;
-  display: block;
-  background-color: rgb(21, 21, 21);
-  color: rgb(245, 242, 242);
-  width: 100%;
-  height: 117px;
-  position: relative;
+img {
+  border-radius: 39px;
+  box-shadow: 0px 4px 25px 15px rgba(0, 0, 0, 0.5);
 }
 
-.logo {
-  display: block;
-  width: 268px;
-  height: 68px;
-  position: absolute;
-  top: 28px;
-  left: 169px;
+/* Text Customizations */
+h2 {
+  font-family: "Julius Sans One", sans-serif;
+  text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.75);
 }
 
-.navigation ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 75px;
-  width: 646px;
-  height: 24px;
-  position: absolute;
-  top: 46px;
-  left: 600px;
+video.video-fluid {
+  width: 100%; /* Для адаптивности */
+  max-width: 100%; /* Не превышать размер контейнера */
+  height: auto; /* Сохранить пропорции */
+  border-radius: 39px; /* Закругленные углы */
+  box-shadow: 0px 4px 25px 15px rgba(0, 0, 0, 0.5); /* Тень */
+  -o-object-fit: cover;
+     object-fit: cover; /* Убедиться, что видео заполняет контейнер */
 }
 
-.navigation ul li {
-  line-height: 24px;
-  font-size: 16px;
-  color: rgb(245, 242, 242);
+p {
+  font-family: "Julius Sans One", sans-serif;
+  margin-top: 40px;
+  text-shadow: 0px 4px 5px rgba(0, 0, 0, 0.75);
 }
 
-.navigation ul li a {
-  text-decoration: none;
-  color: rgb(245, 242, 242);
-  transition: color 0.3s;
+/* Navbar Customizations */
+.navbar-brand img {
+  max-width: 100px;
+  height: auto;
 }
 
-.navigation ul li a:hover {
-  text-decoration: underline;
-}
-
-.feedback {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: absolute;
-  width: 190px;
-  height: 54px;
-  top: 31px;
-  left: 1465px;
-  border-radius: 27px;
-  border: 1px solid rgb(252, 179, 87);
-}
-
-.feedback p {
-  color: rgb(252, 179, 87);
-  font-size: 14px;
-  line-height: 21px;
-  margin: 0;
-}
-
-.main {
-  position: absolute;
-  top: 84px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-image: url("../img/background.jpg");
-  width: 1920px;
-  height: 1008px;
-}
-
-.nav {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  width: 630px;
-  height: 24px;
-  position: absolute;
-  top: 200px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.nav li {
-  list-style: none;
-  font-size: 16px;
-  text-align: center;
-  transition: color 0.3s;
-  position: relative;
-}
-
-.nav li:not(:first-child)::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  border-left: 1px solid rgb(245, 242, 242);
-}
-
-.nav li:first-child {
-  border-left: 1px solid rgb(245, 242, 242);
-}
-
-.nav li:last-child {
-  border-right: 1px solid rgb(245, 242, 242);
-}
-
-.nav li:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  border-right: 1px solid rgb(245, 242, 242);
-}
-
-.nav li:hover {
-  color: #ffa500;
-}
-
-.content h1 {
-  font-weight: 600;
-  font-size: 45px;
-  position: absolute;
-  width: 962px;
-  height: 136px;
-  top: 275px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-}
-
-.btn {
-  width: 367px;
-  height: 74px;
-  background-color: #e59400;
-  border: none;
-  border-radius: 50px;
-  color: #fff;
-  cursor: pointer;
-  text-transform: uppercase;
+.navbar .nav-link {
   font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: absolute;
-  top: 450px;
-  left: 50%;
-  transform: translateX(-50%);
-  transition: box-shadow 0.3s, transform 0.3s;
-  box-shadow: 0 0 15px rgba(229, 148, 0, 0.6);
+  transition: color 0.3s;
 }
 
-@media (max-width: 768px) {
-  header {
-    height: auto;
+.navbar .nav-link:hover {
+  color: #ffc107;
+}
+
+.btn-outline-light {
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffc107;
+  color: #121212;
+}
+
+video.video-fluid {
+  width: 100%; /* Для адаптивности */
+  max-width: 100%; /* Не превышать размер контейнера */
+  height: auto; /* Сохранить пропорции */
+  border-radius: 39px; /* Закругленные углы */
+  box-shadow: 0px 4px 25px 15px rgba(0, 0, 0, 0.5); /* Тень */
+  -o-object-fit: cover;
+     object-fit: cover; /* Убедиться, что видео заполняет контейнер */
+}
+
+/* Responsive Styling Overrides */
+@media (max-width: 991px) {
+  section {
+    padding: 100px 20px;
+  }
+  h2, p {
     text-align: center;
-    padding: 10px 0;
-    background-color: rgb(21, 21, 21);
-    position: fixed; /* Фиксируем хэдер */
-    top: 0;
-    width: 100%;
-    z-index: 10;
   }
-  .logo {
-    position: static;
-    width: 150px; /* Уменьшаем размер */
-    height: auto;
-    margin: 0 auto;
-  }
-  .navigation {
-    margin-top: 70px; /* Отступ для фиксированного хедера */
-  }
-  .navigation ul {
-    display: none; /* Прячем меню на малых экранах */
-    flex-direction: column;
-    gap: 15px;
-    background-color: rgb(21, 21, 21);
-    padding: 10px;
-    border-radius: 10px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-  }
-  .navigation ul.navigation--open {
-    display: flex; /* Показываем, если открыто */
-  }
-  .feedback {
-    position: static;
-    margin: 10px auto;
-    width: auto;
-    height: auto;
-    padding: 5px 10px;
-  }
-  .main {
-    position: relative; /* Убираем абсолютное позиционирование */
-    top: 0;
-    background-image: url("../img/background.jpg");
-    background-size: cover; /* Картинка адаптируется к размеру экрана */
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: calc(100vh - 70px); /* Высота экрана минус хедер */
-  }
-  .content h1 {
-    font-size: 24px;
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    color: rgb(245, 242, 242);
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-  }
-  .btn {
-    width: 80%;
-    margin: 20px auto;
-    height: 60px;
-    font-size: 16px;
+  .navbar-brand img {
+    width: 80px;
   }
 }
-@media (max-width: 480px) {
-  .logo {
-    width: 120px;
+.examples-section {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  padding: 165px 80px;
+}
+
+.content-wrapper {
+  display: flex;
+  width: 100%;
+  max-width: 1599px;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font: 400 96px Julius Sans One, sans-serif;
+}
+
+.section-title {
+  align-self: center;
+}
+
+.cards-row {
+  display: flex;
+  margin-top: 139px;
+  width: 100%;
+  max-width: 1599px;
+  flex-direction: column;
+}
+
+.card {
+  border-radius: 15px;
+  background-color: rgb(217, 217, 217);
+  box-shadow: 0px 4px 7px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  width: 437px;
+  max-width: 100%;
+  height: 251px;
+}
+
+.card-center {
+  align-self: center;
+  z-index: 10;
+  margin-top: -251px;
+}
+
+.card-end {
+  align-self: end;
+  z-index: 10;
+  margin-top: -251px;
+}
+
+@media (max-width: 991px) {
+  .examples-section {
+    padding: 100px 20px;
   }
-  .content h1 {
-    font-size: 18px;
+  .content-wrapper {
+    max-width: 100%;
+    font-size: 40px;
   }
-  .btn {
-    height: 50px;
-    font-size: 14px;
+  .section-title {
+    max-width: 100%;
+    font-size: 40px;
+  }
+  .cards-row {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  .card-center,
+  .card-end {
+    margin-top: -200px;
+  }
+}
+.devices-section {
+  padding: 134px 80px;
+  text-align: center;
+}
+
+.device-image {
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.75);
+}
+
+.category-title {
+  font: 400 48px "Julius Sans One", sans-serif;
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 4px 15px rgba(0, 0, 0, 0.75);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.carousel-inner .carousel-item {
+  transition: transform 0.5s ease-in-out; /* Smooth scrolling animation */
+}
+
+.row.gx-4 {
+  justify-content: center;
+  align-items: start;
+}
+
+.devices-section, .optimization-section {
+  width: 100%; /* Ensure full width */
+  padding: 134px 0; /* Adjust padding as needed */
+  text-align: center;
+}
+
+.optimization-container {
+  width: 100%; /* Ensure full width */
+  padding: 0; /* Remove any padding if necessary */
+}
+
+.carousel-section {
+  width: 100%; /* Ensure full width for the carousel */
+}
+
+.carousel iframe {
+  width: 100%; /* Make iframe responsive */
+  height: 1080px; /* Maintain aspect ratio */
+}
+
+.full-width-carousel-section {
+  width: 100%; /* Full width */
+  height: 1561px; /* Fixed height */
+  background-color: #121212; /* Optional: background color */
+}
+
+.full-width-carousel-section .carousel-inner img {
+  height: 100%; /* Ensure images fill the carousel */
+  -o-object-fit: cover;
+     object-fit: cover; /* Maintain aspect ratio */
+}
+
+.full-width-carousel-section .category-title {
+  color: rgb(255, 255, 255); /* Title color */
+  text-align: center; /* Center title */
+  margin-bottom: 20px; /* Space below title */
+}
+
+/* Global styles */
+body {
+  background-color: #121212;
+  color: white;
+}
+
+section {
+  padding: 119px 70px;
+  background-color: #121212;
+}
+
+/* Image styling */
+img {
+  border-radius: 39px;
+  box-shadow: 0px 4px 25px 15px rgba(0, 0, 0, 0.5);
+}
+
+video.video-fluid {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 39px;
+  box-shadow: 0px 4px 25px 15px rgba(0, 0, 0, 0.5);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Navbar customizations */
+.navbar .nav-link {
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #ffc107;
+}
+
+.btn-outline-light {
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffc107;
+  color: #121212;
+}
+
+/* Responsive Styling */
+@media (max-width: 991px) {
+  section {
+    padding: 100px 20px;
+  }
+  h2, p {
+    text-align: center;
+  }
+  .navbar-brand img {
+    width: 80px;
+  }
+  .content-wrapper {
+    max-width: 100%;
+    font-size: 40px;
+  }
+  .section-title {
+    max-width: 100%;
+    font-size: 40px;
+  }
+  .cards-row {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  .card-center, .card-end {
+    margin-top: -200px;
   }
 }/*# sourceMappingURL=style.css.map */
