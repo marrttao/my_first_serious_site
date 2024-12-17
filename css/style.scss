@@ -632,3 +632,19 @@ footer a:hover {
     width: 100%;
   }
 }
+
+.container-header {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.navbar-collapse {
+  width: 900px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .container-2 img {
+    width: 320px;
+    height: auto;
+  }
+}
