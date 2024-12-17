@@ -25,6 +25,7 @@ body {
   color: $color-text;
   font-family: 'Julius Sans One', sans-serif;
   text-shadow: #0d0d0d 5px 5px 5px;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -642,9 +643,43 @@ footer a:hover {
   width: 900px !important;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
+
+  .container-2 .section-title {
+      width: 380px;
+      margin-left: 0 !important;
+      text-align: center;
+  }
+
+  .examples-section {
+    padding: 165px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .container-2 img {
     width: 320px;
     height: auto;
+    align-self: center;
+    margin-left: 35px;
+  }
+
+  .youtube-carousel-section  {
+    flex-direction: column;
+
+    iframe {
+      width: 360px !important;
+      margin-left: 415px;
+    }
+  }
+
+  .devices-section .carousel {
+    flex-direction: column;
+    
+    
+  }
+
+  .second_container {
+    margin-top: -250px;
   }
 }
